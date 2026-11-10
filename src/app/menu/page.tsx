@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Menu", description: "Browse the MNCH
 export default function MenuPage() {
   return (
     <main className="menu-page">
-      <PageIntro label="SIPS MENU / FIND YOUR FAVORITE" title="GOOD TASTE." highlight="NO SAME-SAME." description="Hot coffee, bright chillers, frosty shakes and a little something soft. Find your next MNCH moment." />
+      <PageIntro label="SIPS MENU / FIND YOUR FAVORITE" title="GOOD TASTE." highlight="NO SAME-SAME." description="Hot coffee, bright chillers, frosty shakes and a little something soft. Find your next MNCH moment." variant="menu" />
       <section className="menu-content section-pad">
         <SectionReveal className="menu-note"><span className="menu-note-mark">✳</span><p>MADE FOR YOUR MOOD.<br /><span>Find a classic, try a new favorite, make it an MNCH moment.</span></p></SectionReveal>
         <MenuBrowser />

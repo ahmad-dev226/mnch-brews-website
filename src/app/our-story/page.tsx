@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: "Our Story", description: "Get to kno
 export default function OurStoryPage() {
   return (
     <main className="story-page">
-      <PageIntro label="THE MNCH POINT OF VIEW" title="IT STARTED WITH" highlight="A DIFFERENT KIND OF BREW." description="Not a history lesson. Just a little more about the energy behind MNCH." />
+      <PageIntro label="THE MNCH POINT OF VIEW" title="IT STARTED WITH" highlight="A DIFFERENT KIND OF BREW." description="Not a history lesson. Just a little more about the energy behind MNCH." variant="story" />
       <section className="story-lead section-pad">
         <SectionReveal className="story-lead-copy"><p className="eyebrow">01 / THE IDENTITY</p><h2>MADE TO<br /><span>STAND OUT.</span></h2><p>MNCH is a name with its own rhythm. A bold little mark for a brand that doesn&apos;t feel like everything else. Recognizable, unpretentious, and ready to make an ordinary moment feel like yours.</p></SectionReveal>
         <SectionReveal className="story-lead-image photo-frame"><Image src={photos[0].src} alt={photos[0].alt} fill sizes="(max-width: 700px) 90vw, 44vw" /><span className="photo-index">THE MNCH POINT OF VIEW</span></SectionReveal>

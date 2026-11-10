@@ -1,5 +1,10 @@
 export const instagramUrl = "https://www.instagram.com/mnchbrews/";
 
+export const buildingPhoto = {
+  src: "/images/MNCH-BUILDING.jpeg",
+  alt: "The MNCH Brews building at night in Sialkot, Pakistan",
+} as const;
+
 export const photos = [
   { src: "/images/MNCH1.jpeg", alt: "MNCH cans styled with a book and sunglasses" },
   { src: "/images/MNCH2.jpeg", alt: "An MNCH iced drink held against an everyday outfit" },
@@ -8,6 +13,8 @@ export const photos = [
   { src: "/images/MNCH5.jpeg", alt: "A layered MNCH drink with matcha, milk and strawberry" },
   { src: "/images/MNCH6.jpeg", alt: "A group of MNCH drinks at the court" },
 ] as const;
+
+export const galleryPhotos = [...photos, buildingPhoto] as const;
 
 export const navigation = [
   { label: "HOME", href: "/" },

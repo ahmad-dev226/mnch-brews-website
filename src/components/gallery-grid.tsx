@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowLeft, ArrowRight, X } from "lucide-react";
-import type { photos } from "@/data/brand";
+import type { galleryPhotos } from "@/data/brand";
 
-type GalleryPhoto = (typeof photos)[number];
+type GalleryPhoto = (typeof galleryPhotos)[number];
 
 export function GalleryGrid({ images, preview = false }: { images: readonly GalleryPhoto[]; preview?: boolean }) {
   const [active, setActive] = useState<number | null>(null);
